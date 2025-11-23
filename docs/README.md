@@ -77,11 +77,11 @@ dotnet run --urls http://0.0.0.0:5000
   - Expo CLI  
   - Android Emulator (opcional para gravação do vídeo)  
 
-## Como rodar o frontend (na VM Windows)
-# 📱 5. Frontend (React Native / Expo)
+##  ✔ Como rodar o frontend (na VM Windows)
 
 A aplicação foi executada **diretamente na VM Windows** usando:
 ```bash
+cd mobile
 npm install
 npm start
 ```
