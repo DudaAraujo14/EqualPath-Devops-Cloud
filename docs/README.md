@@ -294,7 +294,12 @@ EqualPath Platform
 
 ---
 
-# 📁 Repositório no GitHub
-
-👉 *adicione o link aqui após criar o repo*  
-
+### 📁 Repositório no GitHub
+#### https://github.com/DudaAraujo14/EqualPath-Devops-Cloud.git
+---
+### 📁 Repositório no GitHub Backend
+#### https://github.com/DudaAraujo14/EqualPath.git
+----
+### 📁 Repositório no GitHub Mobile
+#### https://github.com/annabonfim/equalpath-gs-mobile.git
+---
