@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+.expo-shared/
+web-build/
+*.log
+package-lock.json
+build/
+dist/
+coverage/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+
