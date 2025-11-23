@@ -58,6 +58,14 @@ Devops-EqualPath/
 - **API rodando na porta 5000**
 - **Banco Oracle da FIAP integrado**
 
+### ✔ Como rodar o backend (na VM Linux)
+
+```bash
+cd backend/src/EqualPath.Api
+dotnet restore
+dotnet build
+dotnet run --urls http://0.0.0.0:5000
+```
 ---
 
 ## 🟦 Frontend – VM Windows (Expo/React Native)
@@ -69,6 +77,24 @@ Devops-EqualPath/
   - Expo CLI  
   - Android Emulator (opcional para gravação do vídeo)  
 
+## Como rodar o frontend (na VM Windows)
+# 📱 5. Frontend (React Native / Expo)
+
+A aplicação foi executada **diretamente na VM Windows** usando:
+```bash
+npm install
+npm start
+```
+E rodando via:
+- Expo Web (`w`)
+- Expo Go no celular (QR Code)
+- Emulador Android
+
+  
+Ou caso for abrir eplo celular 
+```bash
+npx expo start --tunnel
+```
 ---
 
 # 🧩 3. Backend – API ASP.NET 9
@@ -151,25 +177,7 @@ Persistência comprovada em vídeo.
 
 ---
 
-# 📱 5. Frontend (React Native / Expo)
 
-A aplicação foi executada **diretamente na VM Windows** usando:
-```bash
-npm install
-npm start
-```
-E rodando via:
-- Expo Web (`w`)
-- Expo Go no celular (QR Code)
-- Emulador Android
-
-  
-Ou caso for abrir eplo celular 
-```bash
-npx expo start --tunnel
-```
-
----
 
 # 🎥 6. Vídeo 
 
