@@ -27,6 +27,46 @@ Devops-EqualPath/
 
 # ☁️ 1. Arquitetura em Nuvem – Azure
 
+```mermaid
+flowchart TD
+    %% ============================
+    %% CAMADA FRONTEND (VM WINDOWS)
+    %% ============================
+    subgraph FRONTEND ["VM WINDOWS – FRONTEND"]
+        F1["React Native<br>Expo CLI<br>Portas: 19000 / 19006"]
+    end
+
+    %% ============================
+    %% CAMADA BACKEND (VM LINUX)
+    %% ============================
+    subgraph BACKEND ["VM LINUX – BACKEND (.NET 9)"]
+        A["API<br>Controllers + Swagger<br>Porta 5000"]
+        B["Application Layer<br>Services • Interfaces • DTOs"]
+        C["Domain Layer<br>Entities • Enums • Regras"]
+        D["Infrastructure Layer<br>EF Core Oracle • DbContext • Repositórios"]
+    end
+
+    %% ============================
+    %% CAMADA BANCO FIAP ORACLE
+    %% ============================
+    subgraph DATABASE ["ORACLE FIAP – DB"]
+        E["Oracle Database<br>Porta 1521"]
+    end
+
+    %% ============================
+    %% CONEXÕES
+    %% ============================
+    F1 -->|"VNet Interna (Azure)"| A
+    A --> B
+    B --> C
+    B --> D
+    D -->|"Oracle ManagedDataAccess.Core"| E
+
+```
+
+
+---
+
 ## 🧱 Componentes Criados
 
 ### 🔹 Resource Group
